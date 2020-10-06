@@ -25,6 +25,7 @@
       enabled: yes
       masked: no
       state: reloaded
+  ignore_errors: true
 
 - name: systemd restart var-tmp.mount
   become: yes
@@ -34,6 +35,7 @@
       enabled: yes
       masked: no
       state: reloaded
+  ignore_errors: true
 
 - name: generate new grub config
   become: yes
